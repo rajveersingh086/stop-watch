@@ -1,0 +1,133 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #36D1DC, #5B86E5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.stopwatch-container {
+    text-align: center;
+    background: #556a6b;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.stopwatch-container:hover {
+    transform: scale(1.05);
+}
+
+.time-display {
+    font-size: 3em;
+    color: #000000;
+    background: #b3c0de;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.controls button {
+    font-size: 1.2em;
+    padding: 12px 24px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(100, 6, 6, 0.1);
+    text-transform: uppercase;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+button#startBtn {
+    background: #4CAF50;
+    color: rgb(255, 255, 255);
+}
+
+button#startBtn:hover {
+    background: #43a047;
+}
+
+button#pauseBtn {
+    background: #d12727;
+    color: white;
+}
+
+button#pauseBtn:hover {
+    background: #e53935;
+}
+
+button#resetBtn {
+    background: #607D8B;
+    color: white;
+}
+
+button#resetBtn:hover {
+    background: #546e7a;
+}
+
+button#lapBtn {
+    background: #FF9800;
+    color: white;
+}
+
+button#lapBtn:hover {
+    background: #fb8c00;
+}
+
+.lap-container {
+    margin-top: 30px;
+}
+
+.lap-container h2 {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+ul li {
+    font-size: 1.2em;
+    padding: 10px;
+    background: #f9f9f9;
+    margin-bottom: 5px;
+    border-left: 5px solid #4CAF50;
+    border-radius: 5px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+ul li:hover {
+    background: #89c7db;
+}
